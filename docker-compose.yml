@@ -1,0 +1,33 @@
+version: '3.3'
+
+services:
+  lsp-frontend:
+    build:
+      context: .
+      #ADD_IN_CI dockerfile: ./Dockerfile.ci
+    ports: #REMOVE_IN_CI
+      - '${lsp_FRONTEND_APP_PORT}:${lsp_FRONTEND_APP_PORT}' #REMOVE_IN_CI
+    command: dev
+    volumes: #REMOVE_IN_CI
+      - ${PWD}/frontend:/home/frontend #REMOVE_IN_CI
+    environment:
+      - lsp_BACKEND_APP_PORT
+      - lsp_FRONTEND_APP_PORT
+      - NEXT_PUBLIC_lsp_FRONTEND_URL=${lsp_FRONTEND_APP_URI}
+      - NEXT_PUBLIC_lsp_BACKEND_APP_URI=${lsp_BACKEND_APP_URI}
+      - NEXT_PUBLIC_OIDC_CLIENT_ID=${OIDC_CLIENT_ID}
+      - IS_CI
+      - CYPRESS_RECORD_KEY
+      - CYPRESS_BUILD_ID=${BUILD_TAG}
+      - CYPRESS_DIRECTOR_TOKEN
+    healthcheck:
+      test:
+        ['CMD', 'curl', '-f', 'http://lsp-frontend:${lsp_FRONTEND_APP_PORT}']
+      interval: 1s
+      timeout: 5s
+      retries: 60
+    networks:
+      app-network:
+networks:
+  app-network:
+    name: ${APP_NETWORK_NAME}

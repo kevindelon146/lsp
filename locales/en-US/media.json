@@ -1,0 +1,26 @@
+{
+    "add-folder": "Add Folder",
+    "file-storage": "File Storage",
+    "contact": "Contact",
+    "please-wait": "Please Wait",
+    "newItemText":"New Item Text",
+    "search" : "Search",
+    "add-file": "Add File",
+    "tag": "Tag",
+    "last-used": "Last Used",
+    "root": "Root",
+    "file-storage-media":"File Storage Media",
+    "no-media-available": "No Media Available",
+    "upload": "Upload",
+    "create-file-storage":"Create File Storage",
+    "all": "ALL",
+    "images": "IMAGES",
+    "videos": "VIDEOS",
+    "audios": "AUDIOS",
+    "please-select-an-account":"Please select an account",
+    "rename": "Rename",
+    "edit": "Edit",
+    "move": "Move",
+    "delete": "Delete"
+
+}

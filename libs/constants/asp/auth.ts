@@ -1,0 +1,1 @@
+export const GoogleDeveloperAppId = process.env.NEXT_PUBLIC_GOOGLE_APP_CLIENT_ID

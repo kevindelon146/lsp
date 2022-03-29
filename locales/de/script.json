@@ -1,0 +1,14 @@
+{
+    "script-title":"Skripttitel",
+    "language": "Sprache",
+    "public": "Öffentlich",
+    "create-script": "Skript erstellen",
+    "my-scripts": "Mein Skript",
+    "community-scripts": "Gemeinschaft Skripts",
+    "load-more": "Meer laden",
+    "no-scripts-available": "Kein Skript verfügbar",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "edit": "Bearbeiten",
+    "clone": "Klon"
+}

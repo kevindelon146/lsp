@@ -1,0 +1,14 @@
+{
+    "create-script": "Create Script",
+    "script-title":"Script Title",
+    "language": "Language",
+    "public": "Public",
+    "my-scripts": "My Scripts",
+    "community-scripts": "Community Scripts",
+    "load-more": "Load more",
+    "no-scripts-available": "No Scripts Available",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "clone": "Clone"
+}
